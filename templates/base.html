@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">-->
+    <title>Hey - {% block title %}{% endblock %}</title>
+    <meta name="og:site_name" content="Navan's Blog'" />
+    <link rel="canonical" href="https://navan.blog/" />
+    <meta name="twitter:url" content="https://navan.blog/" />
+    <meta name="og:url" content="https://navan.blog/" />
+    <meta name="twitter:title" content="Hey - {% block twittertitle %}{% endblock %}" />
+    <meta name="og:title" content="Hey - {% block ogtitle %}{% endblock %}" />
+    <meta name="description" content="{% block description %}{% endblock %}" />
+    <meta name="twitter:description" content="{% block twitterdescription %}{% endblock %}" />
+    <meta name="og:description" content="{% block ogdescription %}{% endblock %}" />
+    <meta name="twitter:card" content="{% block twitter2description %}{% endblock %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+    <meta name="twitter:image" content="https://navan.blog/images/logo.png" />
+    <meta name="og:image" content="https://navan.blog/images/logo.png" />
+    {% endblock %}
+</head>
+<body>
+    {% include "header.html" %}
+    {% block body %}{% endblock %}  
+</body>
+</html>
